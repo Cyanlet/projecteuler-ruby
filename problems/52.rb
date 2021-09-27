@@ -1,6 +1,3 @@
 i = 1
-until (i.digits.sort == (i*2).digits.sort and i.digits.sort == (i*3).digits.sort and i.digits.sort == (i*4).digits.sort and i.digits.sort == (i*5).digits.sort and i.digits.sort == (i*6).digits.sort)
-    i += 1
-end
-
+i += 1 until (1..6).collect{|j|i.digits.sort==(i*j).digits.sort}.count{|j|j==false} == 0
 puts i
