@@ -1,2 +1,2 @@
 res = 2**1000
-puts res.digits.sum
+puts res.digits.sum 
